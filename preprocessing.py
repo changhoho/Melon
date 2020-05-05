@@ -9,13 +9,13 @@ import pickle
 """
 if __name__=="__main__":
 
-    with open('./dataset/song_meta.json') as json_file:
+    with open('./dataset/song_meta.json', encoding='UTF-8') as json_file:
         songs = json.load(json_file)
 
-    with open('./dataset/train.json') as json_file:
+    with open('./dataset/train.json', encoding='UTF-8') as json_file:
         train = json.load(json_file)
 
-    with open('./dataset/genre_gn_all.json') as json_file:
+    with open('./dataset/genre_gn_all.json', encoding='UTF-8') as json_file:
         genre = json.load(json_file)
 
     idx_song = {x["id"]: x['song_name'] for x in songs}
